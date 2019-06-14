@@ -1,0 +1,931 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Qet",
+				"abbreviation": "QET",
+				"full": "Qet",
+				"url": "https://www.worldanvil.com/w/qet-timepool",
+				"authors": [
+					"Garrett Lewis"
+				],
+				"convertedBy": [
+					"Garrett Lewis"
+				]
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Ezytlichou",
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"swarmSize": "T"
+			},
+			"source": "Qet",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "10d4 + 10",
+				"average": 35
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 50,
+				"canHover": false
+			},
+			"str": 5,
+			"dex": 15,
+			"con": 10,
+			"int": 3,
+			"wis": 10,
+			"cha": 8,
+			"passive": 10,
+			"cr": "1/4",
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {
+				"proficiency": true,
+				"hpAverageSimple": true
+			},
+			"activeTabInput": 5,
+			"activeTabOutput": 1,
+			"profBonus": 2,
+			"page": 0,
+			"senses": [
+				"magicsense 30 ft."
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit +4} to hit, reach 5 ft., one target. {@h}3 ({@dice 1d6 + 3}) damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"Small, yet deadly in swarms, ezytlichoutin are small bat-sized flying monsters that hunt in swarms. A single swarm can contain anywhere from twenty to one-hundred singular creatures. They attack prey from above, and painfully begin to devour them regardless of them being alive or dead.",
+					"Ezytlichou make their wasp-like nests throughout the world— barring cold, snowy terrain. Like many insects, they will enter a state of torpor for this they will typically fly back to the nest.",
+					"Each ezytlichou has a small, slender body— about the size of a fist. They appear almost like flying fish, with a tapered back and wide head. Though, their head is horizontal unlike the vertical heads of fish. Along the entire length of the front of the head lies a sharp-toothed mouth. From just below where the head meets their body sprouts a set of four pale-orange beetle-like wings."
+				]
+			},
+			"environment": [
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"swamp"
+			],
+			"group": "Monsters",
+			"activeTab__input": 1,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Heutoue",
+			"size": "M",
+			"type": "monstrosity",
+			"source": "Qet",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 50",
+				"average": 113
+			},
+			"speed": {
+				"walk": 5,
+				"burrow": {
+					"number": 10,
+					"condition": "when fleeing."
+				}
+			},
+			"str": 10,
+			"dex": 7,
+			"con": 12,
+			"int": 6,
+			"wis": 12,
+			"cha": 5,
+			"passive": 15,
+			"cr": "4",
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {
+				"hpAverageSimple": false,
+				"proficiency": false
+			},
+			"activeTabInput": 1,
+			"activeTabOutput": 0,
+			"activeTab__input": 1,
+			"activeTab__output": 0,
+			"senses": [
+				"magicsense 40 ft.",
+				"tremorsense 40 ft."
+			],
+			"skill": {
+				"stealth": "+2"
+			},
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}36 ({@damage 8d8}) piercing damage."
+					]
+				},
+				{
+					"name": "Throw",
+					"entries": [
+						"{@atk rw} {@hit 2} to hit, range 25 ft., one target. {@h}27 ({@damage 6d8}) bludgeoning damage. The heutoue hurls dirt and stone at a target within its trap or along the edges."
+					]
+				},
+				{
+					"name": "Tremor",
+					"entries": [
+						"{@atk rs} {@hit 6} to hit, range 20 ft., multiple targets. All creatures within the line must make a {@dc 13} Dex save or be knocked {@condition prone} and take {@h}9 ({@damage 2d8}) bludgeoning damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The heutoue's innate spellcasting ability is Wisdom (spell save {@dc 13}). It can innately cast the following spells, requiring no material components: "
+					],
+					"footerEntries": [
+						"1/day: Tremor"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"fluff": {
+				"entries": [
+					"Heutoue are tough creatures which burrow into the ground, destabilize it with magic, and wait for prey to fall into their traps with maws wide open. Their strong teeth allow them to burrow even into stone. Once prey falls into their pit, the heutoue will begin to assail them with dirt or stone, slowly but surely sinking the trapped creatures into their waiting maws.",
+					"Heutoue tend to live in clear areas where prey may fall— such as mountain passes, caves, trails— they can be encountered just about anywhere. Some variants live in sandy deserts, as well. They will rest after burrowing into the ground, before opening up the area into a sinkhole— once situated, they will rest periodically between meals.",
+					"Heutoue possess round, grey-scaled bodies with two mouths. One, on the bottom, with five sharp, tough teeth— each attached to its own muscle— is used to drill into the ground, leaving the quad-mandibled top mouth exposed on top. Once embedded, [the creature] will use its magical abilties to send localized earthquakes into the rock around it numerous times, weakening it to the point where it eventually collapses into a sinkhole around it. (It takes considerable power to do this, so a heutoue cannot do this constantly— only once it has caught significant prey) Prey they find themselves caught in this sinkhole— human, monster, or otherwise— will be assaulted with rocks tossed by the heutoue, speeding their descent towards its waiting maw."
+				]
+			},
+			"group": "Monsters",
+			"senseTags": [
+				"T"
+			],
+			"profBonus": 3
+		},
+		{
+			"name": "Cichetet",
+			"size": "M",
+			"type": "monstrosity",
+			"source": "Qet",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				9
+			],
+			"hp": {
+				"formula": "6d8 + 10",
+				"average": 37
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 8,
+			"int": 6,
+			"wis": 7,
+			"cha": 5,
+			"passive": 10,
+			"cr": "1/4",
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {
+				"hpAverageSimple": false
+			},
+			"activeTab__input": 1,
+			"activeTab__output": 0,
+			"senses": [
+				"magicsense 40 ft."
+			],
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The cichetet has advantage on an attack roll against a creature if at least one of the cichetet's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated} ."
+					]
+				},
+				{
+					"name": "Grappler",
+					"entries": [
+						"The cichetet has advantage on attack rolls against any creature {@condition grappled} by it."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"The cichetet's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Bash",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}4 ({@damage 1d8}) bludgeoning damage. The cichetet bashes down with its large hands. Instead of dealing damage, the cichetet can choose to grapple a target "
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"fluff": {
+				"entries": [
+					"Cichetet are six-limbed monsters that hunt in packs to block off small corridors. Their powerful legs allow them to quickly jump after prey in the canyons. Once cornered, they will grab prey with their large hands, bash them wildly against the surrounding landscape— and finally eat them once they stop struggling.",
+					"Cichetet primarily hunt within deserts and canyons, they are diurnal and will sleep in the shade of cliffs, large boulders, or other overhangs.",
+					"A bony torso— appearing similar to that of a man's— support their six long limbs. Four of these limbs serve as legs, appearing similar to those a grasshopper might posses— these are situated at each corner of the creature's torso, pointing out at an angle almost in an \"x\" formation. From the top sides of the cichetet's back are two lanky ape-like arms, complete with large, bony hands and opposable thumbs. Their heads are flat-topped extensions from their torsos with four small black eyes on top and a wide mouth filled with shearing teeth stretched over the bottom— almost curved in a twisted smile. Their entire bodies are covered with short grey fur."
+				]
+			},
+			"ixBrew": 2,
+			"environment": [
+				"desert"
+			]
+		},
+		{
+			"name": "Tuezyloytz",
+			"size": "L",
+			"type": "monstrosity",
+			"source": "Qet",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "19d10 + 15",
+				"average": 119
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 8,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 12,
+			"passive": 10,
+			"cr": "4",
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {
+				"hpAverageSimple": false
+			},
+			"activeTab__input": 1,
+			"activeTab__output": 0,
+			"senses": [
+				"magicsense 60 ft."
+			],
+			"spellcasting": [
+				{
+					"name": "Innate spellcasting",
+					"headerEntries": [
+						"The tuezyloytz's innate spellcasting ability is Wisdom (spell save {@dc 14}). It can innately cast the following spells,"
+					],
+					"footerEntries": [
+						"Crystalline illusion"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"environment": [
+				"desert"
+			],
+			"trait": [
+				{
+					"name": "Crystalline illusion",
+					"entries": [
+						"While the tuezyloytz remains motionless, until 10 feet away, it is indistinguishable from an oasis or town."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}26 ({@damage 3d8}) piercing damage and ({@dice 5d8}) poison damage. The target must make a {@dc 13} Constitution save or become {@condition poisoned} for {@dice 1d8} rounds."
+					]
+				},
+				{
+					"name": "Shove",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d8}) piercing damage. The tuezyloytz shoves a single target with its full weight— impaling them with the crystals on their back."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"Tuezyloytz are seldom seen, as they refract light through a combination of magic and materials throughout their bodies to create the illusion of an oasis, or town— mirages. These images appear to be heat-distorted, though, in truth— they are unable to project clear images. Once their prey approaches close enough for the illusion to fade— they are quickly dispatched with the tuezyloytz's scorpion-like tail— poisoning the unfortunate catch. In the deserts, where tuezyloytz typically resides, their prey can rarely hide nor run as they succumb to the vile venom.",
+					"Tuezyloytz live in deserts, where their mirages are not only more enticing— but less out of place. They are diurnal, and during the night will bury themselves in sand to sleep undisturbed.",
+					"Tuezyloytz are about the same size as lions, with four short, stubby legs, and a long stinger-tipped tail akin to that of a scorpion. Their fur is short, and sand colored to better blend into the environments in which they live. Along the tortoise-shelled backs of their bodies grow large spines of refractive crystals through which they use their magical abilities to manipulate light. Their heads are short, and hidden under a bump in their shells— with a series of three eyes peeking from underneath, and their mouth running along the bottom."
+				]
+			}
+		},
+		{
+			"name": "Holcho",
+			"size": "M",
+			"type": "monstrosity",
+			"source": "Qet",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13,
+				{
+					"ac": 15,
+					"condition": "underwater",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 12",
+				"average": 102
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 12,
+			"dex": 9,
+			"con": 10,
+			"int": 6,
+			"wis": 11,
+			"cha": 4,
+			"passive": 10,
+			"cr": "3",
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {
+				"hpAverageSimple": false
+			},
+			"activeTab__input": 1,
+			"activeTab__output": 0,
+			"senses": [
+				"magicsense 40 ft.",
+				"tremorsense 40 ft."
+			],
+			"senseTags": [
+				"T"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate spellcasting",
+					"headerEntries": [
+						"The holcho's innate spellcasting ability is Wisdom (spell save {@dc 14}). It can innately cast the following spells,"
+					],
+					"footerEntries": [
+						"Current manipulation"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Current manipulation (pull)",
+					"entries": [
+						"Creatures within 25 ft. of the holcho are pulled {@dice 2d10} ft. towards it."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}22 ({@damage 5d8}) slashing damage."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Current manipulation (push)",
+					"entries": [
+						"Attacks made on the holcho while it is underwater are less likely to hit."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the Holcho remains motionless underwater and seen from above, it is almost indistinguishable from a normal reed— requiring a {@dc 16} Perception save to spot."
+					]
+				},
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The Holcho has advantage on attack rolls against any creature it has surprised."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"traitTags": [
+				"False Appearance",
+				"Ambusher"
+			],
+			"ixBrew": 5,
+			"environment": [
+				"underwater"
+			]
+		},
+		{
+			"name": "Qeplueoytz",
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"source": "Qet",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "20d8 + 35",
+				"average": 125
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 16,
+			"wis": 12,
+			"cha": 16,
+			"passive": 15,
+			"cr": "13",
+			"profSave": {
+				"int": 1,
+				"cha": 1
+			},
+			"profSkill": {
+				"deception": 1,
+				"perception": 1,
+				"persuasion": 1
+			},
+			"autoCalc": {
+				"proficiency": true,
+				"passivePerception": false,
+				"hpAverageSimple": true
+			},
+			"activeTab__input": 2,
+			"activeTab__output": 0,
+			"profBonus": 5,
+			"languages": [
+				"the languages of its local area"
+			],
+			"senses": [
+				"magicsense 60 ft."
+			],
+			"skill": {
+				"deception": "+8",
+				"perception": "+6",
+				"persuasion": "+8"
+			},
+			"save": {
+				"int": "+8",
+				"cha": "+8"
+			},
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate spellcasting",
+					"headerEntries": [
+						"The qeplueoytz's innate spellcasting ability is Intelligence (spell save {@dc 16}). It can innately cast the following spells,"
+					],
+					"footerEntries": [
+						"Transform self (2/Day), Telescopic punch, Tremor"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Transform self",
+					"entries": [
+						"The qeplueoytz changes its face, size, skin, and hair to the appearance of another person."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}81 ({@damage 18d8}) piercing damage. The qeplueoytz bites a target with the mouth in its ribs."
+					]
+				},
+				{
+					"name": "Telescopic punch",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}83 ({@damage 14d10 + 6}) bludgeoning damage. The qeplueoytz uses its magics to cause an arm to rapidly extend as it hits a target."
+					]
+				},
+				{
+					"name": "Tremor",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 20/20 ft., one target. All creatures within the line must make a {@dc 15} Dexerity save or be knocked {@condition prone} and take {@h}9 ({@damage 2d8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Camoflage",
+					"entries": [
+						"Once a day, the qeplueoytz runs and changes its skin to match the surroundings to an extent— requiring a {@dc 15} Perception check to spot afterwards."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Qeplueoytz are powerful, magically gifted monsters which take on the form of humans in order to lure and devour them. They are more cunning than the average monster, and are able to blend in to human societies— growing more and more powerful over the years. Most are solitary, though some have been known to work in packs.",
+					"A qeplueoytz is likely to hunt and live within urban environments— larger cities with a constant influx of fresh meat are ideal. Their sleep patterns are adjustable, much like that of a human's.",
+					"Qeplueoytz are humanoid, yet they possess hollow, collapsible, and reconfigurable bones. Their arms and legs are telescopic, almost, on the inside. Their skulls are not solid bone— instead being composed of many smaller bones attached by tissue. Their skin is akin to that of an octopus— with many minuscule sacs of pigment placed throughout their bodies which enables them to match the skin color of a specific human. Under the skin lies hair— ready to be pulled up through the skin throughout the body to replicate someone's own hair. Their bones can be reconfigured through their inherent magical ability, with this they adjust their height and facial structures to match that of a previously consumed human— as they must be close to one to learn to mimic them. Due to the hollow, weak nature of their structure— they cannot win in a physical fight, and must rely on deception and their magic to catch and kill prey. Once caught, they will eat with a sideways mouth on their chests— almost as if their ribs were teeth. If one suspects another of being a qeplueoytz, all they need to do is see them shirtless."
+				]
+			}
+		},
+		{
+			"name": "Llibttell",
+			"size": "M",
+			"type": "monstrosity",
+			"source": "Qet",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 15",
+				"average": 73
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 11,
+			"int": 8,
+			"wis": 11,
+			"cha": 5,
+			"passive": 10,
+			"cr": "1",
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {
+				"hpAverageSimple": false
+			},
+			"activeTab__input": 5,
+			"activeTab__output": 0,
+			"senses": [
+				"magicsense 40 ft."
+			],
+			"spellcasting": [
+				{
+					"name": "Innate spellcasting",
+					"headerEntries": [
+						"The llibttell's innate spellcasting ability is Wisdom (spell save {@dc 12}). It can innately cast the following spells, "
+					],
+					"footerEntries": [
+						"Brighten"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Brighten",
+					"entries": [
+						"The llibttell causes light reflecting off its hide to become brighter—  creatures within 20 ft. must make a {@dc 15} Dexterity save or become {@condition blinded} for 4 turns."
+					]
+				},
+				{
+					"name": "Tail slice",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 3}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"Llibtells are uniquely adapted to hunt travellers within Tchaoxlik— as they cannot easily traverse the depths without light. Llibtells are covered in reflective scales which blind those who carry sources of light. When prey is found, llibtells will curl up their long bodies so more light is reflected. Once blinded, prey is quickly finished off with the llibtell's sickle-clawed tail.",
+					"It is believed that they are capable of increasing the light that touches their skin with their inherent magics— though this is difficult to prove.",
+					"In the dark, underground. Llibttells are somewhat solitary creatures, though small packs are not uncommon. Like many underground species, they will sleep intermittently whenever they feel it is safe to do so.",
+					"Llibttell stand around two feet tall, and can be up to five feet long. Their four cat-like legs allow them to quietly sneak around prey. Given their long, slender bodies, they move almost like snakes— wobbling side to sight as they move. The tail is held high, and typically rests pointed forward, arched above the back. Their tails can be almost as long as their bodies. About half of the tail is a long, thin sharp bone ending in a point which is used to kill prey. A llibttell head is long and flat, with two small black eyes on the top— just enough to be able to sense light, but not enough to see in it. Instead, they rely on smell and hearing to track prey. Their noses resting at the very tips of their snouts. Sharp, tiny teeth enable them to chew up the soft insides of their human prey."
+				]
+			},
+			"environment": [
+				"underwater"
+			]
+		},
+		{
+			"name": "Bneuptt",
+			"size": "L",
+			"type": "monstrosity",
+			"source": "Qet",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "20d8 + 23",
+				"average": 113
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 15,
+			"dex": 10,
+			"con": 10,
+			"int": 7,
+			"wis": 10,
+			"cha": 5,
+			"passive": 12,
+			"cr": "5",
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {
+				"proficiency": true,
+				"passivePerception": false,
+				"hpAverageSimple": false
+			},
+			"activeTab__input": 5,
+			"activeTab__output": 0,
+			"profBonus": 3,
+			"senses": [
+				"magicsense 50 ft.",
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"action": [
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}36 ({@damage 6d10 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Spinning Gore",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}40 ({@damage 6d10 + 10}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}21 ({@damage 6d6}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the Bneuptt moves at least 15 feet straight toward a target and then hits it with its horns on the same turn, the target takes an extra 13 ({@damage 2d8 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					"Bneuptts are fast, hardy bipedal creatures that run towards prey with their twisted horns, which can be rotated by pulling and pushing a muscle at its back.. When prey is found, bneuptts will rush at them full speed, twist their horns— and ram directly into them.",
+					"Underground, dark, deep caverns. They sleep intermittently throughout their days when they believe they are safe.",
+					"Bneuptts hunt both other monsters, and humans.",
+					"Oily, pale white skin covers most of their hairless bodies. Bneuptts are bipedal, with short stiff necks supporting a round head. At the very center of their face is a strong twisted horn— truthfully two horns twisted together, but just one in effect. Inside the skull, at the base of this horn, is a muscle which is twisted around it— allowing the horn to spin for a time. On the underside of the head runs a wide, grinning mouth, with the skin pulled thin towards its opening. Serrated teeth line the creature's jaws. On each side of its head is a large, bat-like ear, split at the tip. At the end of the bneuptt's body is a short, wide, flat tail, balancing it as it rams into prey."
+				]
+			}
+		},
+		{
+			"name": "Cultly",
+			"size": "M",
+			"type": "monstrosity",
+			"source": "Qet",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "11d6 + 12",
+				"average": 50
+			},
+			"speed": {
+				"walk": 15,
+				"climb": 25
+			},
+			"str": 6,
+			"dex": 12,
+			"con": 10,
+			"int": 8,
+			"wis": 12,
+			"cha": 5,
+			"passive": 10,
+			"cr": "3",
+			"profSave": {},
+			"profSkill": {
+				"stealth": 1
+			},
+			"autoCalc": {
+				"proficiency": false,
+				"hpAverageSimple": false
+			},
+			"activeTab__input": 0,
+			"activeTab__output": 0,
+			"profBonus": 2,
+			"senses": [
+				"magicsense 80 ft.",
+				"tremorsense 50 ft."
+			],
+			"senseTags": [
+				"T"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate spellcasting",
+					"headerEntries": [
+						"The cultly's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells,"
+					],
+					"footerEntries": [
+						"Drop"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"skill": {
+				"stealth": "+3"
+			},
+			"action": [
+				{
+					"name": "Drop",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 5 ft., one target. {@h}16 ({@damage 3d10}) piercing damage. The cultly causes a stalactite it is clinging to to drop onto a target."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Cling",
+					"entries": [
+						"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. The cultly clings onto a target, dealing {@h}3 ({@damage 1d6}) piercing damage per round until the target makes a {@dc 15} Strength save to pull it off— finally dealing ({@dice 2d8}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"trait": [
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The Cultly has advantage on attack rolls against any creature it has surprised."
+					]
+				}
+			],
+			"traitTags": [
+				"Ambusher"
+			],
+			"fluff": {
+				"entries": [
+					"Cultly resemble starfish, with four rather than five limbs that cling to stalactites. Once prey is detected beneath them, they will extend their claws and cause them to vibrate— weakening the stone’s hold on the cave roof before using their innate magical ability to finally pull it free with extra momentum— impaling their targets.",
+					"Cultly live in caves, as their method of attack would be useless elsewhere. They do not sleep, always ready for a passing meal.",
+					"The body of a cultly is relatively flat, and small— they are only typically one to two square feet in size. They resemble starfish, with four limbs. Their rough, mottled grey skin resembles the rock they cling to. Each of their limbs is lined with sharp, bony claws that enable them to stick to the rock. These claws can be used to strip the meat from prey, and place it into their soft mouths at the center of their bodies."
+				]
+			},
+			"environment": [
+				"underdark"
+			]
+		}
+	]
+}
