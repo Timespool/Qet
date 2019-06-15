@@ -28,11 +28,11 @@
 				"U"
 			],
 			"ac": [
-				10
+				11
 			],
 			"hp": {
-				"formula": "10d4 + 10",
-				"average": 35
+				"formula": "7d4",
+				"average": 17
 			},
 			"speed": {
 				"walk": 20,
@@ -51,7 +51,7 @@
 			"profSkill": {},
 			"autoCalc": {
 				"proficiency": true,
-				"hpAverageSimple": true
+				"hpAverageSimple": false
 			},
 			"activeTabInput": 5,
 			"activeTabOutput": 1,
@@ -64,7 +64,7 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit +4} to hit, reach 5 ft., one target. {@h}3 ({@dice 1d6 + 3}) damage."
+						"{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}3 ({@dice 1d6 + 3}) damage."
 					]
 				}
 			],
@@ -87,7 +87,7 @@
 				"swamp"
 			],
 			"group": "Monsters",
-			"activeTab__input": 1,
+			"activeTab__input": 3,
 			"activeTab__output": 0
 		},
 		{
@@ -107,15 +107,12 @@
 				}
 			],
 			"hp": {
-				"formula": "14d8 + 50",
-				"average": 113
+				"formula": "14d8 + 15",
+				"average": 78
 			},
 			"speed": {
 				"walk": 5,
-				"burrow": {
-					"number": 10,
-					"condition": "when fleeing."
-				}
+				"burrow": 10
 			},
 			"str": 10,
 			"dex": 7,
@@ -133,7 +130,7 @@
 			},
 			"activeTabInput": 1,
 			"activeTabOutput": 0,
-			"activeTab__input": 1,
+			"activeTab__input": 4,
 			"activeTab__output": 0,
 			"senses": [
 				"magicsense 40 ft.",
@@ -146,19 +143,19 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}36 ({@damage 8d8}) piercing damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}25 ({@damage 5d8 + 3}) piercing damage."
 					]
 				},
 				{
 					"name": "Throw",
 					"entries": [
-						"{@atk rw} {@hit 2} to hit, range 25 ft., one target. {@h}27 ({@damage 6d8}) bludgeoning damage. The heutoue hurls dirt and stone at a target within its trap or along the edges."
+						"{@atk rw} {@hit 6} to hit, range 25 ft., one target. {@h}20 ({@damage 4d8 + 2}) bludgeoning damage. The heutoue hurls dirt and stone at a target within its trap or along the edges."
 					]
 				},
 				{
 					"name": "Tremor",
 					"entries": [
-						"{@atk rs} {@hit 6} to hit, range 20 ft., multiple targets. All creatures within the line must make a {@dc 13} Dex save or be knocked {@condition prone} and take {@h}9 ({@damage 2d8}) bludgeoning damage."
+						"{@atk rs} {@hit 7} to hit, range 20 ft. cone, multiple targets. All creatures within the line must make a {@dc 13} Dexterity save, being knocked {@condition prone} and taking {@h}25 ({@damage 4d8 + 7}) bludgeoning damage on a failed save, or taking half as much damage on a successful one."
 					]
 				}
 			],
@@ -197,7 +194,15 @@
 			"senseTags": [
 				"T"
 			],
-			"profBonus": 3
+			"profBonus": 3,
+			"trait": [
+				{
+					"name": "Sinkhole",
+					"entries": [
+						"If the heutoue is within its sinkhole, all creatures within the 20 ft. area of effect have half movement speed."
+					]
+				}
+			]
 		},
 		{
 			"name": "Cichetet",
@@ -211,8 +216,8 @@
 				9
 			],
 			"hp": {
-				"formula": "6d8 + 10",
-				"average": 37
+				"formula": "3d8 + 2",
+				"average": 15
 			},
 			"speed": {
 				"walk": 35
@@ -228,9 +233,9 @@
 			"profSave": {},
 			"profSkill": {},
 			"autoCalc": {
-				"hpAverageSimple": false
+				"hpAverageSimple": true
 			},
-			"activeTab__input": 1,
+			"activeTab__input": 4,
 			"activeTab__output": 0,
 			"senses": [
 				"magicsense 40 ft."
@@ -251,7 +256,7 @@
 				{
 					"name": "Standing Leap",
 					"entries": [
-						"The cichetet's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+						"The cichetet's long jump is up to 40 feet and its high jump is up to 10 feet, with or without a running start."
 					]
 				}
 			],
@@ -262,7 +267,7 @@
 				{
 					"name": "Bash",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}4 ({@damage 1d8}) bludgeoning damage. The cichetet bashes down with its large hands. Instead of dealing damage, the cichetet can choose to grapple a target "
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}5 ({@damage 1d8 + 1}) bludgeoning damage. The cichetet bashes down with its large hands. Instead of dealing damage, the cichetet can choose to grapple a target which must make a {@dc 12} Dexterity save or become {@condition grappled}."
 					]
 				},
 				{
@@ -309,11 +314,11 @@
 				}
 			],
 			"hp": {
-				"formula": "19d10 + 15",
-				"average": 119
+				"formula": "13d10 + 10",
+				"average": 81
 			},
 			"speed": {
-				"walk": 30
+				"walk": 20
 			},
 			"str": 10,
 			"dex": 8,
@@ -328,7 +333,7 @@
 			"autoCalc": {
 				"hpAverageSimple": false
 			},
-			"activeTab__input": 1,
+			"activeTab__input": 4,
 			"activeTab__output": 0,
 			"senses": [
 				"magicsense 60 ft."
@@ -364,13 +369,13 @@
 				{
 					"name": "Sting",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}26 ({@damage 3d8}) piercing damage and ({@dice 5d8}) poison damage. The target must make a {@dc 13} Constitution save or become {@condition poisoned} for {@dice 1d8} rounds."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}27 ({@damage 2d8}) piercing damage and ({@dice 4d8}) poison damage. The target must make a {@dc 13} Constitution save or become {@condition poisoned} for {@dice 1d8} rounds."
 					]
 				},
 				{
 					"name": "Shove",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d8}) piercing damage. The tuezyloytz shoves a single target with its full weight— impaling them with the crystals on their back."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}25 ({@damage 5d8 + 3}) piercing damage. The tuezyloytz shoves a single target with its full weight— impaling them with the crystals on their back."
 					]
 				}
 			],
@@ -405,8 +410,8 @@
 				}
 			],
 			"hp": {
-				"formula": "20d8 + 12",
-				"average": 102
+				"formula": "13d8 + 7",
+				"average": 65
 			},
 			"speed": {
 				"walk": 20,
@@ -423,9 +428,9 @@
 			"profSave": {},
 			"profSkill": {},
 			"autoCalc": {
-				"hpAverageSimple": false
+				"hpAverageSimple": true
 			},
-			"activeTab__input": 1,
+			"activeTab__input": 5,
 			"activeTab__output": 0,
 			"senses": [
 				"magicsense 40 ft.",
@@ -438,7 +443,7 @@
 				{
 					"name": "Innate spellcasting",
 					"headerEntries": [
-						"The holcho's innate spellcasting ability is Wisdom (spell save {@dc 14}). It can innately cast the following spells,"
+						"The holcho's innate spellcasting ability is Wisdom (spell save {@dc 12}). It can innately cast the following spells,"
 					],
 					"footerEntries": [
 						"Current manipulation"
@@ -454,13 +459,13 @@
 				{
 					"name": "Current manipulation (pull)",
 					"entries": [
-						"Creatures within 25 ft. of the holcho are pulled {@dice 2d10} ft. towards it."
+						"Creatures within 25 ft. of the holcho are pulled {@dice 2d10 + 2} ft. towards it."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}22 ({@damage 5d8}) slashing damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}22 ({@damage 5d8}) slashing damage."
 					]
 				}
 			],
@@ -474,7 +479,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"While the Holcho remains motionless underwater and seen from above, it is almost indistinguishable from a normal reed— requiring a {@dc 16} Perception save to spot."
+						"While the Holcho remains motionless underwater and seen from above, it is almost indistinguishable from a normal reed— requiring a {@dc 14} Perception save to spot."
 					]
 				},
 				{
@@ -497,7 +502,14 @@
 			"ixBrew": 5,
 			"environment": [
 				"underwater"
-			]
+			],
+			"fluff": {
+				"entries": [
+					"Amphibious monsters that hide most of the way under water, leaving only tall green hairs to poke above— giving the false appearance of an innocuous reed often placed in the way of boats. Once prey try to move by the frond— two long hooked mandibles close on then from underneath the water and pull them in towards the creature's mouth.",
+					"Holcho inhabit rivers, lakes, swamps, marshes, and on occasion— shallower waters within oceans. Like sharks, they do not sleep— only part of the brain does, allowing them to constantly be prepared to attack prey that stumbles upon the creature.",
+					"The average holcho is about four feet long, and two feet long. Their bodies are somewhat thin, and covered in deep blue-green scales so as to blend better under the water. They have two short and stocky webbed feet towards their backs, and two larger fins on each side towards their centers— followed by a slim tail. This allows them to chase prey on land for a short distance, eat in peace, or escape danger if need be. Their mouths are staggered somewhat, with their top jaw extending well above their bottom— so as to breach the surface, and display the reed-like hairs at its end. Their mandibles can open at an extremely wide angle— so far as to be able to lie flat against the creature's sides so that prey have less chances of spotting them. The mandibles themselves can be up to two feet wide each— this allows holchotin to easily catch prey much larger than themselves. These mandibles are powerful enough to break bone and potentially boats, but not sever prey."
+				]
+			}
 		},
 		{
 			"name": "Qeplueoytz",
@@ -545,7 +557,7 @@
 				"passivePerception": false,
 				"hpAverageSimple": true
 			},
-			"activeTab__input": 2,
+			"activeTab__input": 4,
 			"activeTab__output": 0,
 			"profBonus": 5,
 			"languages": [
@@ -592,25 +604,25 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}81 ({@damage 18d8}) piercing damage. The qeplueoytz bites a target with the mouth in its ribs."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}67 ({@damage 15d8}) piercing damage. The qeplueoytz bites a target with the mouth in its ribs."
 					]
 				},
 				{
 					"name": "Telescopic punch",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}83 ({@damage 14d10 + 6}) bludgeoning damage. The qeplueoytz uses its magics to cause an arm to rapidly extend as it hits a target."
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}66 ({@damage 11d10 + 6}) bludgeoning damage. The qeplueoytz uses its magics to cause an arm to rapidly extend as it hits a target."
 					]
 				},
 				{
 					"name": "Tremor",
 					"entries": [
-						"{@atk rs} {@hit 5} to hit, range 20/20 ft., one target. All creatures within the line must make a {@dc 15} Dexerity save or be knocked {@condition prone} and take {@h}9 ({@damage 2d8}) bludgeoning damage."
+						"{@atk rs} {@hit 10} to hit, range 20 ft. cone, multiple targets. All creatures within the cone must make a {@dc 15} Dexerity save, being knocked {@condition prone} and taking {@h}58 ({@damage 9d10 + 9}) bludgeoning damage on a failed save, and half as much damage on a successful one."
 					]
 				},
 				{
-					"name": "Camoflage",
+					"name": "Camouflage",
 					"entries": [
-						"Once a day, the qeplueoytz runs and changes its skin to match the surroundings to an extent— requiring a {@dc 15} Perception check to spot afterwards."
+						"Once a day, the qeplueoytz runs and changes its skin to match its surroundings to an extent— requiring a {@dc 15} Perception check to spot afterwards."
 					]
 				}
 			],
@@ -642,15 +654,15 @@
 			],
 			"ac": [
 				{
-					"ac": 13,
+					"ac": 14,
 					"from": [
 						"natural armor"
 					]
 				}
 			],
 			"hp": {
-				"formula": "13d8 + 15",
-				"average": 73
+				"formula": "7d8 + 7",
+				"average": 38
 			},
 			"speed": {
 				"walk": 30
@@ -666,7 +678,8 @@
 			"profSave": {},
 			"profSkill": {},
 			"autoCalc": {
-				"hpAverageSimple": false
+				"hpAverageSimple": false,
+				"proficiency": true
 			},
 			"activeTab__input": 5,
 			"activeTab__output": 0,
@@ -693,13 +706,13 @@
 				{
 					"name": "Brighten",
 					"entries": [
-						"The llibttell causes light reflecting off its hide to become brighter—  creatures within 20 ft. must make a {@dc 15} Dexterity save or become {@condition blinded} for 4 turns."
+						"The llibttell causes light reflecting off its hide to become brighter—  creatures within 20 ft. must make a {@dc 13} Dexterity save or become {@condition blinded} for 4 turns."
 					]
 				},
 				{
 					"name": "Tail slice",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 3}) slashing damage."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 3}) slashing damage."
 					]
 				}
 			],
@@ -717,8 +730,9 @@
 					"Llibttell stand around two feet tall, and can be up to five feet long. Their four cat-like legs allow them to quietly sneak around prey. Given their long, slender bodies, they move almost like snakes— wobbling side to sight as they move. The tail is held high, and typically rests pointed forward, arched above the back. Their tails can be almost as long as their bodies. About half of the tail is a long, thin sharp bone ending in a point which is used to kill prey. A llibttell head is long and flat, with two small black eyes on the top— just enough to be able to sense light, but not enough to see in it. Instead, they rely on smell and hearing to track prey. Their noses resting at the very tips of their snouts. Sharp, tiny teeth enable them to chew up the soft insides of their human prey."
 				]
 			},
+			"profBonus": 2,
 			"environment": [
-				"underwater"
+				"underdark"
 			]
 		},
 		{
@@ -730,11 +744,11 @@
 				"U"
 			],
 			"ac": [
-				15
+				14
 			],
 			"hp": {
-				"formula": "20d8 + 23",
-				"average": 113
+				"formula": "18d8 + 16",
+				"average": 94
 			},
 			"speed": {
 				"walk": 40
@@ -750,11 +764,11 @@
 			"profSave": {},
 			"profSkill": {},
 			"autoCalc": {
-				"proficiency": true,
+				"proficiency": false,
 				"passivePerception": false,
 				"hpAverageSimple": false
 			},
-			"activeTab__input": 5,
+			"activeTab__input": 4,
 			"activeTab__output": 0,
 			"profBonus": 3,
 			"senses": [
@@ -768,13 +782,13 @@
 				{
 					"name": "Gore",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}36 ({@damage 6d10 + 6}) piercing damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}28 ({@damage 4d10 + 6}) piercing damage."
 					]
 				},
 				{
 					"name": "Spinning Gore",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}40 ({@damage 6d10 + 10}) slashing damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}36 ({@damage 5d10 + 10}) slashing damage."
 					]
 				},
 				{
@@ -812,6 +826,9 @@
 					"Bneuptts hunt both other monsters, and humans.",
 					"Oily, pale white skin covers most of their hairless bodies. Bneuptts are bipedal, with short stiff necks supporting a round head. At the very center of their face is a strong twisted horn— truthfully two horns twisted together, but just one in effect. Inside the skull, at the base of this horn, is a muscle which is twisted around it— allowing the horn to spin for a time. On the underside of the head runs a wide, grinning mouth, with the skin pulled thin towards its opening. Serrated teeth line the creature's jaws. On each side of its head is a large, bat-like ear, split at the tip. At the end of the bneuptt's body is a short, wide, flat tail, balancing it as it rams into prey."
 				]
+			},
+			"save": {
+				"str": "+2"
 			}
 		},
 		{
@@ -826,8 +843,8 @@
 				12
 			],
 			"hp": {
-				"formula": "11d6 + 12",
-				"average": 50
+				"formula": "7d6 + 8",
+				"average": 32
 			},
 			"speed": {
 				"walk": 15,
@@ -849,7 +866,7 @@
 				"proficiency": false,
 				"hpAverageSimple": false
 			},
-			"activeTab__input": 0,
+			"activeTab__input": 4,
 			"activeTab__output": 0,
 			"profBonus": 2,
 			"senses": [
@@ -882,7 +899,7 @@
 				{
 					"name": "Drop",
 					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 5 ft., one target. {@h}16 ({@damage 3d10}) piercing damage. The cultly causes a stalactite it is clinging to to drop onto a target."
+						"{@atk rw} {@hit 5} to hit, range 5 ft., one target. The cultly causes a stalactite it is clinging to to drop onto a target— which must make a {@dc 14} Dexterity save or take {@h}22 ({@damage 3d10 + 6}) piercing damage."
 					]
 				},
 				{
@@ -894,7 +911,7 @@
 				{
 					"name": "Cling",
 					"entries": [
-						"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. The cultly clings onto a target, dealing {@h}3 ({@damage 1d6}) piercing damage per round until the target makes a {@dc 15} Strength save to pull it off— finally dealing ({@dice 2d8}) slashing damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. The cultly clings onto a target, dealing {@h}7 ({@damage 2d8}) piercing damage per round until the target makes a {@dc 14} Strength save to pull it off— finally dealing ({@dice 2d8 + 5}) slashing damage."
 					]
 				}
 			],
@@ -926,6 +943,470 @@
 			"environment": [
 				"underdark"
 			]
+		},
+		{
+			"name": "Shulhoa (Dream Worm)",
+			"size": "S",
+			"type": "aberration",
+			"source": "Qet",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "20d6 + 15",
+				"average": 85
+			},
+			"speed": {
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 8,
+			"int": 18,
+			"wis": 17,
+			"cha": 12,
+			"passive": 17,
+			"cr": "8",
+			"profSave": {
+				"int": 1,
+				"wis": 1
+			},
+			"profSkill": {
+				"insight": 1,
+				"perception": 1
+			},
+			"autoCalc": {
+				"proficiency": true,
+				"hpAverageSimple": false,
+				"passivePerception": false
+			},
+			"activeTab__input": 4,
+			"activeTab__output": 0,
+			"profBonus": 3,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Sogolth",
+				"telepathy 120 ft."
+			],
+			"save": {
+				"int": "+7",
+				"wis": "+6"
+			},
+			"skill": {
+				"insight": "+6",
+				"perception": "+6"
+			},
+			"spellcasting": [
+				{
+					"name": "Innate spellcasting",
+					"headerEntries": [
+						"Innate Spellcasting. The shulhoa's innate spellcasting ability is Intelligence (spell save {@dc 15}). The shulhoa can innately cast the following spells,"
+					],
+					"footerEntries": [
+						"Dream leak, Enter, Dream flood"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"unconscious"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"action": [
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}33 ({@damage 6d10}) psychic damage."
+					]
+				},
+				{
+					"name": "Enter",
+					"entries": [
+						"The shulhoa will attempt to enter a creature's head through its ears or nose, the target must make a {@dc 16} Dexterity save or the shulhoa will be able to enter— causing the target to become {@condition charmed} until the shulhoa leaves. The shulhoa will remain for a minimum of 3 rounds, after which the creature will be able to make a {@dc 14} Wisdom save to expel it from themselves. Upon leaving, the target must make a {@dc 15} Sanity save and suffer an effect of indefinite madness on a failure, or an effect of long-term madness on a success."
+					]
+				},
+				{
+					"name": "Dream leak",
+					"entries": [
+						"The shulhoa will fragment pieces of dreams together to create visual and audio illusions within their host's mind."
+					]
+				},
+				{
+					"name": "Dream flood",
+					"entries": [
+						"All creatures within a 35 ft. area must make a {@dc 15} Sanity save and take ({@dice 4d8}) psychic damage and see visual hallucinations for 1 minute on a failure, or only take half that damage on a success."
+					]
+				},
+				{
+					"name": "Shriek",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 20/20 ft., one target. {@h}36 ({@damage 8d8}) psychic damage."
+					]
+				}
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Shulhoa (Dream Worm)",
+			"size": "S",
+			"type": "aberration",
+			"source": "Qet",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "20d6 + 15",
+				"average": 85
+			},
+			"speed": {
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 8,
+			"int": 18,
+			"wis": 17,
+			"cha": 12,
+			"passive": 17,
+			"cr": "8",
+			"profSave": {
+				"int": 1,
+				"wis": 1
+			},
+			"profSkill": {
+				"insight": 1,
+				"perception": 1
+			},
+			"autoCalc": {
+				"proficiency": true,
+				"hpAverageSimple": false,
+				"passivePerception": false
+			},
+			"activeTab__input": 5,
+			"activeTab__output": 0,
+			"profBonus": 3,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Sogolth",
+				"telepathy 120 ft."
+			],
+			"save": {
+				"int": "+7",
+				"wis": "+6"
+			},
+			"skill": {
+				"insight": "+6",
+				"perception": "+6"
+			},
+			"spellcasting": [
+				{
+					"name": "Innate spellcasting",
+					"headerEntries": [
+						"Innate Spellcasting. The shulhoa's innate spellcasting ability is Intelligence (spell save {@dc 15}). The shulhoa can innately cast the following spells,"
+					],
+					"footerEntries": [
+						"Dream leak, Enter, Dream flood"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"unconscious"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"action": [
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}33 ({@damage 6d10}) psychic damage."
+					]
+				},
+				{
+					"name": "Enter",
+					"entries": [
+						"The shulhoa will attempt to enter a creature's head through its ears or nose, the target must make a {@dc 16} Dexterity save or the shulhoa will be able to enter— causing the target to become {@condition charmed} until the shulhoa leaves. The shulhoa will remain for a minimum of 3 rounds, after which the creature will be able to make a {@dc 14} Wisdom save to expel it from themselves. Upon leaving, the target must make a {@dc 15} Sanity save and suffer an effect of indefinite madness on a failure, or an effect of long-term madness on a success."
+					]
+				},
+				{
+					"name": "Dream leak",
+					"entries": [
+						"The shulhoa will fragment pieces of dreams together to create visual and audio illusions within their host's mind."
+					]
+				},
+				{
+					"name": "Dream flood",
+					"entries": [
+						"All creatures within a 35 ft. area must make a {@dc 15} Sanity save and take ({@dice 4d8}) psychic damage and see visual hallucinations for 1 minute on a failure, or only take half that damage on a success."
+					]
+				},
+				{
+					"name": "Shriek",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 20/20 ft., one target. {@h}36 ({@damage 8d8}) psychic damage."
+					]
+				}
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"ixBrew": 9,
+			"fluff": {
+				"entries": [
+					"Shulhoa are horrifying eldritch beings, from the few who have managed to recall encounters with them, they are described to be a floating string of ears with many small transparent fins, faintly covered by a purple glow. Shulhoa eat dreams— passing through the ears or noses of their victims as they sleep. They will remain inside the victim's head, gorging themselves for a while, before exiting out another ear or the nose. If threatened— shulhoa will retreat within someone, and begin feeding them pieces of the dreams they have accumulated distorting their reality— effectively controlling their minds. If their host is killed, or there are no suitable hosts— shulhoa can scream in defense— or worse, bring nightmares to the forefront of everyone’s minds within a certain radius.",
+					"A shulhoa appears as a floating, fleshy string— like a tail without fur— surrounded by ears which are topped with many transparent fins, faintly covered by a purple glow."
+				]
+			}
+		},
+		{
+			"name": "Xoth-Kubori (Gates)",
+			"size": "M",
+			"type": "aberration",
+			"source": "Qet",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "17d8 + 16",
+				"average": 92
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 14,
+			"int": 12,
+			"wis": 16,
+			"cha": 14,
+			"passive": 10,
+			"cr": "14",
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {
+				"proficiency": true,
+				"hpAverageSimple": false
+			},
+			"activeTab__input": 5,
+			"activeTab__output": 0,
+			"profBonus": 5,
+			"languages": [
+				"Sogolth"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate spellcasting",
+					"headerEntries": [
+						"The xoth-kubori's innate spellcasting ability is Wisdom (spell save {@dc 17}). It can innately cast the following spells,"
+					],
+					"footerEntries": [
+						"Skin gate"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled"
+			],
+			"action": [
+				{
+					"name": "Skin gate",
+					"entries": [
+						"Recharge 4-6 ({@dice 1d6}). Upon being touched by a creature, the xoth-kubori can melt and send the target to an alien plane of existence for {@dice 1d100} minutes (or, {@dice 1d6} rounds if in combat), depositing them {@dice 1d100} ft. from where they were first transported upon their return. The target must make a {@dc 15} Sanity save, and take an effect of long-term madness on failure, or a short-term effect on success."
+					]
+				},
+				{
+					"name": "Wobble",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 20 ft. area, multiple targets. {@h}36 ({@damage 8d8}) psychic damage. The xoth-kubori wobbles, its form shifting into unexplainable shapes."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Warp skin",
+					"entries": [
+						"Any time the xoth-kubori is targeted by an attack, roll a {@dice d8}. On a 1 to 2, the xoth-kubori is unaffected. On a 3 to 6 the xoth-kubori takes damage. On a 7 or 8, the xoth-kubori is unaffected, and the effect is reflected back at the instigator as though it originated from the xoth-kubori, turning the attacker into the target, and dealing half damage.",
+						"This trait can be nullified if the xoth-kubori is lit on fire."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"fluff": {
+				"entries": [
+					"Xoth-kubori appear simply as dogs, cats, or other small animals kept as pets. However— once touched, a high-pitched screaming sound can be heard, before their bodies undulate— and pull in the victim. Victims will drift through strange realms for a short time before being thrown out of the creature— unscathed, unless extremely unlucky. Xoth-kubori feed off of fear, and surprise— they have no need for harm. Should one attempt to kill a xoth-kubori they should do so from a distance and with fire— if they were foolish enough to go at it with a melee weapon or bare knuckles they may find their weapons turned back against them, or find themselves trapped inside an alien realm for a time."
+				]
+			}
+		},
+		{
+			"name": "Obkuith (Possessed Debris)",
+			"size": "M",
+			"type": "aberration",
+			"source": "Qet",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"debris"
+					]
+				},
+				{
+					"ac": 11,
+					"condition": "without debris",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 13",
+				"average": 58
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 12,
+			"dex": 10,
+			"con": 12,
+			"int": 17,
+			"wis": 12,
+			"cha": 8,
+			"passive": 10,
+			"cr": "6",
+			"profSave": {
+				"int": 1
+			},
+			"profSkill": {},
+			"autoCalc": {
+				"proficiency": true,
+				"hpAverageSimple": true
+			},
+			"activeTab__input": 5,
+			"activeTab__output": 0,
+			"profBonus": 3,
+			"save": {
+				"int": "+6"
+			},
+			"trait": [
+				{
+					"name": "Gravitational pull",
+					"entries": [
+						"Objects within a 15 ft. radius around the obkuith are gravitationally attracted to it, flying over to join the debris flying around it if not over 10 lbs. Otherwise, objects and creatures will still feel a slight pull— growing stronger the closer they get, pulling in objects weighing less than 21 lbs. at 10 ft. and 31 lbs. at 5. Creatures will have their movement speed halved when attempting to move away from the obkuith, and doubled when moving towards it."
+					]
+				},
+				{
+					"name": "Debris",
+					"entries": [
+						"While surrounded by debris, creatures attacking the obkuith with melee weapons take {@dice 3d8} damage as the debris hits them."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Gravity surge",
+					"entries": [
+						"The obkuith increases its gravitational pull, pulling all creatures and objects around it {@dice 1d12 + 3} ft. closer."
+					]
+				},
+				{
+					"name": "Expand",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, range 10 ft., multiple targets. {@h}36 ({@damage 8d8}) bludgeoning damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"Obkuith are floating pale-obsidian stones, collecting a swarm of various small objects from the surrounding area which flies at high speeds around themselves. Their purpose is unknown, though they are hostile— if one were to step within their “territory” they will find themselves and objects on their person pulled towards the mysterious creature— and assaulted by the swarm already around them.",
+					"The core of a obkuith appears to be obsidian— though, rather than the typical deep black, they are instead pale white. Those who have been lucky enough to observe a core without dying have said at its center lies a darker core— though this seems impossible given than the material isn't transparent in the slightest."
+				]
+			}
 		}
 	]
 }
