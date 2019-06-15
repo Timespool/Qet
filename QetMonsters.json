@@ -87,8 +87,9 @@
 				"swamp"
 			],
 			"group": "Monsters",
-			"activeTab__input": 3,
-			"activeTab__output": 0
+			"activeTab__input": 5,
+			"activeTab__output": 0,
+			"tokenUrl": "https://i.imgur.com/EJBdJT9.png"
 		},
 		{
 			"name": "Heutoue",
@@ -130,7 +131,7 @@
 			},
 			"activeTabInput": 1,
 			"activeTabOutput": 0,
-			"activeTab__input": 4,
+			"activeTab__input": 5,
 			"activeTab__output": 0,
 			"senses": [
 				"magicsense 40 ft.",
@@ -202,7 +203,8 @@
 						"If the heutoue is within its sinkhole, all creatures within the 20 ft. area of effect have half movement speed."
 					]
 				}
-			]
+			],
+			"tokenUrl": "https://i.imgur.com/EJBdJT9.png"
 		},
 		{
 			"name": "Cichetet",
@@ -235,7 +237,7 @@
 			"autoCalc": {
 				"hpAverageSimple": true
 			},
-			"activeTab__input": 4,
+			"activeTab__input": 5,
 			"activeTab__output": 0,
 			"senses": [
 				"magicsense 40 ft."
@@ -295,7 +297,8 @@
 			"ixBrew": 2,
 			"environment": [
 				"desert"
-			]
+			],
+			"tokenUrl": "https://i.imgur.com/EJBdJT9.png"
 		},
 		{
 			"name": "Tuezyloytz",
@@ -333,7 +336,7 @@
 			"autoCalc": {
 				"hpAverageSimple": false
 			},
-			"activeTab__input": 4,
+			"activeTab__input": 5,
 			"activeTab__output": 0,
 			"senses": [
 				"magicsense 60 ft."
@@ -391,7 +394,8 @@
 					"Tuezyloytz live in deserts, where their mirages are not only more enticing— but less out of place. They are diurnal, and during the night will bury themselves in sand to sleep undisturbed.",
 					"Tuezyloytz are about the same size as lions, with four short, stubby legs, and a long stinger-tipped tail akin to that of a scorpion. Their fur is short, and sand colored to better blend into the environments in which they live. Along the tortoise-shelled backs of their bodies grow large spines of refractive crystals through which they use their magical abilities to manipulate light. Their heads are short, and hidden under a bump in their shells— with a series of three eyes peeking from underneath, and their mouth running along the bottom."
 				]
-			}
+			},
+			"tokenUrl": "https://i.imgur.com/EJBdJT9.png"
 		},
 		{
 			"name": "Holcho",
@@ -509,7 +513,8 @@
 					"Holcho inhabit rivers, lakes, swamps, marshes, and on occasion— shallower waters within oceans. Like sharks, they do not sleep— only part of the brain does, allowing them to constantly be prepared to attack prey that stumbles upon the creature.",
 					"The average holcho is about four feet long, and two feet long. Their bodies are somewhat thin, and covered in deep blue-green scales so as to blend better under the water. They have two short and stocky webbed feet towards their backs, and two larger fins on each side towards their centers— followed by a slim tail. This allows them to chase prey on land for a short distance, eat in peace, or escape danger if need be. Their mouths are staggered somewhat, with their top jaw extending well above their bottom— so as to breach the surface, and display the reed-like hairs at its end. Their mandibles can open at an extremely wide angle— so far as to be able to lie flat against the creature's sides so that prey have less chances of spotting them. The mandibles themselves can be up to two feet wide each— this allows holchotin to easily catch prey much larger than themselves. These mandibles are powerful enough to break bone and potentially boats, but not sever prey."
 				]
-			}
+			},
+			"tokenUrl": "https://i.imgur.com/EJBdJT9.png"
 		},
 		{
 			"name": "Qeplueoytz",
@@ -557,7 +562,7 @@
 				"passivePerception": false,
 				"hpAverageSimple": true
 			},
-			"activeTab__input": 4,
+			"activeTab__input": 5,
 			"activeTab__output": 0,
 			"profBonus": 5,
 			"languages": [
@@ -642,7 +647,8 @@
 					"A qeplueoytz is likely to hunt and live within urban environments— larger cities with a constant influx of fresh meat are ideal. Their sleep patterns are adjustable, much like that of a human's.",
 					"Qeplueoytz are humanoid, yet they possess hollow, collapsible, and reconfigurable bones. Their arms and legs are telescopic, almost, on the inside. Their skulls are not solid bone— instead being composed of many smaller bones attached by tissue. Their skin is akin to that of an octopus— with many minuscule sacs of pigment placed throughout their bodies which enables them to match the skin color of a specific human. Under the skin lies hair— ready to be pulled up through the skin throughout the body to replicate someone's own hair. Their bones can be reconfigured through their inherent magical ability, with this they adjust their height and facial structures to match that of a previously consumed human— as they must be close to one to learn to mimic them. Due to the hollow, weak nature of their structure— they cannot win in a physical fight, and must rely on deception and their magic to catch and kill prey. Once caught, they will eat with a sideways mouth on their chests— almost as if their ribs were teeth. If one suspects another of being a qeplueoytz, all they need to do is see them shirtless."
 				]
-			}
+			},
+			"tokenUrl": "https://i.imgur.com/EJBdJT9.png"
 		},
 		{
 			"name": "Llibttell",
@@ -733,7 +739,8 @@
 			"profBonus": 2,
 			"environment": [
 				"underdark"
-			]
+			],
+			"tokenUrl": "https://i.imgur.com/EJBdJT9.png"
 		},
 		{
 			"name": "Bneuptt",
@@ -768,7 +775,7 @@
 				"passivePerception": false,
 				"hpAverageSimple": false
 			},
-			"activeTab__input": 4,
+			"activeTab__input": 5,
 			"activeTab__output": 0,
 			"profBonus": 3,
 			"senses": [
@@ -829,7 +836,8 @@
 			},
 			"save": {
 				"str": "+2"
-			}
+			},
+			"tokenUrl": "https://i.imgur.com/EJBdJT9.png"
 		},
 		{
 			"name": "Cultly",
@@ -866,7 +874,7 @@
 				"proficiency": false,
 				"hpAverageSimple": false
 			},
-			"activeTab__input": 4,
+			"activeTab__input": 5,
 			"activeTab__output": 0,
 			"profBonus": 2,
 			"senses": [
@@ -942,136 +950,8 @@
 			},
 			"environment": [
 				"underdark"
-			]
-		},
-		{
-			"name": "Shulhoa (Dream Worm)",
-			"size": "S",
-			"type": "aberration",
-			"source": "Qet",
-			"alignment": [
-				"L",
-				"N"
 			],
-			"ac": [
-				15
-			],
-			"hp": {
-				"formula": "20d6 + 15",
-				"average": 85
-			},
-			"speed": {
-				"fly": 40,
-				"canHover": false
-			},
-			"str": 10,
-			"dex": 12,
-			"con": 8,
-			"int": 18,
-			"wis": 17,
-			"cha": 12,
-			"passive": 17,
-			"cr": "8",
-			"profSave": {
-				"int": 1,
-				"wis": 1
-			},
-			"profSkill": {
-				"insight": 1,
-				"perception": 1
-			},
-			"autoCalc": {
-				"proficiency": true,
-				"hpAverageSimple": false,
-				"passivePerception": false
-			},
-			"activeTab__input": 4,
-			"activeTab__output": 0,
-			"profBonus": 3,
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"senseTags": [
-				"SD"
-			],
-			"languages": [
-				"Sogolth",
-				"telepathy 120 ft."
-			],
-			"save": {
-				"int": "+7",
-				"wis": "+6"
-			},
-			"skill": {
-				"insight": "+6",
-				"perception": "+6"
-			},
-			"spellcasting": [
-				{
-					"name": "Innate spellcasting",
-					"headerEntries": [
-						"Innate Spellcasting. The shulhoa's innate spellcasting ability is Intelligence (spell save {@dc 15}). The shulhoa can innately cast the following spells,"
-					],
-					"footerEntries": [
-						"Dream leak, Enter, Dream flood"
-					],
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"languageTags": [
-				"TP"
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"unconscious"
-			],
-			"vulnerable": [
-				"fire"
-			],
-			"action": [
-				{
-					"name": "Sting",
-					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}33 ({@damage 6d10}) psychic damage."
-					]
-				},
-				{
-					"name": "Enter",
-					"entries": [
-						"The shulhoa will attempt to enter a creature's head through its ears or nose, the target must make a {@dc 16} Dexterity save or the shulhoa will be able to enter— causing the target to become {@condition charmed} until the shulhoa leaves. The shulhoa will remain for a minimum of 3 rounds, after which the creature will be able to make a {@dc 14} Wisdom save to expel it from themselves. Upon leaving, the target must make a {@dc 15} Sanity save and suffer an effect of indefinite madness on a failure, or an effect of long-term madness on a success."
-					]
-				},
-				{
-					"name": "Dream leak",
-					"entries": [
-						"The shulhoa will fragment pieces of dreams together to create visual and audio illusions within their host's mind."
-					]
-				},
-				{
-					"name": "Dream flood",
-					"entries": [
-						"All creatures within a 35 ft. area must make a {@dc 15} Sanity save and take ({@dice 4d8}) psychic damage and see visual hallucinations for 1 minute on a failure, or only take half that damage on a success."
-					]
-				},
-				{
-					"name": "Shriek",
-					"entries": [
-						"{@atk rw} {@hit 8} to hit, range 20/20 ft., one target. {@h}36 ({@damage 8d8}) psychic damage."
-					]
-				}
-			],
-			"damageTags": [
-				"Y"
-			],
-			"miscTags": [
-				"MW",
-				"RW"
-			]
+			"tokenUrl": "https://i.imgur.com/EJBdJT9.png"
 		},
 		{
 			"name": "Shulhoa (Dream Worm)",
@@ -1201,13 +1081,23 @@
 				"MW",
 				"RW"
 			],
-			"ixBrew": 9,
+			"ixBrew": null,
 			"fluff": {
 				"entries": [
 					"Shulhoa are horrifying eldritch beings, from the few who have managed to recall encounters with them, they are described to be a floating string of ears with many small transparent fins, faintly covered by a purple glow. Shulhoa eat dreams— passing through the ears or noses of their victims as they sleep. They will remain inside the victim's head, gorging themselves for a while, before exiting out another ear or the nose. If threatened— shulhoa will retreat within someone, and begin feeding them pieces of the dreams they have accumulated distorting their reality— effectively controlling their minds. If their host is killed, or there are no suitable hosts— shulhoa can scream in defense— or worse, bring nightmares to the forefront of everyone’s minds within a certain radius.",
 					"A shulhoa appears as a floating, fleshy string— like a tail without fur— surrounded by ears which are topped with many transparent fins, faintly covered by a purple glow."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/A4lFv5t.png"
+						}
+					}
 				]
-			}
+			},
+			"tokenUrl": "https://i.imgur.com/A4lFv5t.png"
 		},
 		{
 			"name": "Xoth-Kubori (Gates)",
@@ -1310,7 +1200,8 @@
 				"entries": [
 					"Xoth-kubori appear simply as dogs, cats, or other small animals kept as pets. However— once touched, a high-pitched screaming sound can be heard, before their bodies undulate— and pull in the victim. Victims will drift through strange realms for a short time before being thrown out of the creature— unscathed, unless extremely unlucky. Xoth-kubori feed off of fear, and surprise— they have no need for harm. Should one attempt to kill a xoth-kubori they should do so from a distance and with fire— if they were foolish enough to go at it with a melee weapon or bare knuckles they may find their weapons turned back against them, or find themselves trapped inside an alien realm for a time."
 				]
-			}
+			},
+			"tokenUrl": "https://i.imgur.com/A4lFv5t.png"
 		},
 		{
 			"name": "Obkuith (Possessed Debris)",
@@ -1406,7 +1297,9 @@
 					"Obkuith are floating pale-obsidian stones, collecting a swarm of various small objects from the surrounding area which flies at high speeds around themselves. Their purpose is unknown, though they are hostile— if one were to step within their “territory” they will find themselves and objects on their person pulled towards the mysterious creature— and assaulted by the swarm already around them.",
 					"The core of a obkuith appears to be obsidian— though, rather than the typical deep black, they are instead pale white. Those who have been lucky enough to observe a core without dying have said at its center lies a darker core— though this seems impossible given than the material isn't transparent in the slightest."
 				]
-			}
+			},
+			"ixBrew": 12,
+			"tokenUrl": "https://i.imgur.com/A4lFv5t.png"
 		}
 	]
 }
